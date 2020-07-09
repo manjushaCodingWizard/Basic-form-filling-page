@@ -1,0 +1,121 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(229, 245, 228);
+  color:rgb(3, 77, 3);
+  line-height:1.6;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 1em;
+  
+}
+
+.container{
+  max-width:1150px;  /*responsive....(u can do size change of browser to see)*/
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em;  
+}
+
+ul{
+  list-style:none;
+  padding:0;
+}
+
+.brand{
+  text-align: center;
+}
+
+.brand span{
+  color:rgb(184, 22, 248);
+}
+
+.wrapper{
+  display:grid;
+  grid-template-rows: 0.3fr 2fr;
+  box-shadow:0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+
+.wrapper>*{             /*for all elements in the wrapper*/
+  padding:1em;
+}
+
+.company-info{
+  background-color: rgb(163, 241, 163);
+}
+
+.company-info h3, .company-info ul{
+  text-align: center;
+  margin:0 0 1em 0;
+  font-weight: 800;
+}
+
+.container .brand{
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact{
+  background-color: rgb(215, 248, 215);
+}
+
+/*form*/
+.contact form{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:15px;
+}
+
+.contact form label{
+  display:block;
+}
+.contact form p{
+  margin: 0;
+}
+
+.contact form button{
+  width:100%;
+  padding:8px;
+  background-color: rgb(86, 252, 100);
+  border:0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover{
+  background-color: rgb(163, 241, 163);
+  color:rgb(2, 70, 2);
+  border:1px solid rgb(2, 70, 2);
+}
+
+.contact form input, .contact form textarea{
+  border:1px solid rgb(173, 252, 173);
+  padding:10px;
+}
+
+@media(min-width:700px){
+  .wrapper{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    box-sizing:border-box;
+    height:100vh;
+  }
+
+  form >*{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .company-info h3, .company-info ul, .brand{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .company-info{
+    padding-top:150px;
+  }
+}
+
+
+

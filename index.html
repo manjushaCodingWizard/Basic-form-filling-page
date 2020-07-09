@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Filling Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e873c2c6f0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+      <h1 class="brand"><span>Web</span> Design Kingdom</h1>
+      <div class="wrapper">
+        <div class="company-info">
+          <h3>Web Desing Kingdom</h3>
+          <ul>
+            <li><i class="fa fa-phone"></i>   +91  987654321</li>
+            <li><i class="fa fa-envelope"></i></i> abc@abc.com</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Fill Form to Join Us</h3>
+          <form>
+            <p>
+                <label for="firstname">First Name: </label>
+                <input id="firstname" type="text" name="firstname" required>
+            </p>  
+            <p>
+              <label for="lastname">Last Name: </label>
+              <input id="lastname" type="text" name="lastname">
+            </p> 
+            <p>
+              <label for="company">Last Company Name: </label>
+              <input id="company" type="text" name="company" required>
+            </p>    
+            <p>    
+                <label for="email">Email: </label>
+                <input id="email" type="email" name="email" required>
+            </p>
+            <p>
+                <label for="telephone">Phone No.: </label>
+                <input id="telephone" type="tel" name="telephone">
+            </p>
+            <p>
+                <label for="yourmsg">Message</label>
+                <textarea id="yourmsg" name="yourmsg" rows="3"></textarea>
+            </p>
+            <p>
+              Select Gender: <br/>
+              <input type="radio" name="gender" value="male">Male<br/>
+              <input type="radio" name="gender" value="female">Female<br/>
+              <input type="radio" name="gender" value="other">Other<br/>
+              <input type="radio" name="gender" value="prefernottosay">Prefer not to say<br/>
+            </p>     
+            <p>
+                What Languages you have learned till now? <br/>
+                <label><input type="checkbox" name="language" value="CandC++">C and C++</label><br/>
+                <label><input type="checkbox" name="language" value="java">Java</label><br/>
+                <label><input type="checkbox" name="language" value="python">Python</label><br/>
+                <label><input type="checkbox" name="language" value="html">HTML</label><br/>
+                <label><input type="checkbox" name="language" value="css">CSS</label><br/>
+                <label><input type="checkbox" name="language" value="javascript">JavaScript</label><br/>
+            </p>    
+            <p>
+                <button>Submit</button>
+            </p>
+          </form>     
+        </div>
+
+      </div>
+    </div>
+   
+</body>
+</html>
